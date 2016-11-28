@@ -8,10 +8,18 @@
  * Author: 1050210XX 周永振老師
  */
 
+import java.util.Random;
+
 public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Random rnd = new Random();
+	    rnd.setSeed(23323456);
+	    
+	    for(int i = 1;i<=6;i++){
+	    	System.out.print((int)Math.random()*42+1);
+	    }
 
 	}
 

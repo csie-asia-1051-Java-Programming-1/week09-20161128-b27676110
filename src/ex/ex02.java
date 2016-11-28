@@ -11,7 +11,27 @@ public class ex02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList<Student> studList = new ArrayList<Student>();
+		studList.add(new Student("david", "1899"));
+		studList.add(new Student("Jack", "1085"));
+		studList.add(new Student("Kevin", "1985"));
+		studList.get(1).showInfo();
+		studList.get(1).addCourse("程式", "1050809");
+		studList.grt(1).showInfo();
 
 	}
 
 }
+
+public class Student{
+	private String id,name;
+	private ArrayList<Course> couList = new ArrayList<Course>();
+	public Student (String name1,String id1){
+		name = name1; id = id1;
+	}
+	public void showInfo();
+	System.out.println("name:"+name);
+	System.out.println("id:"+id);
+	System.out.println("# of course"+couList.see());
+	
+	}}
